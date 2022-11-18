@@ -1,0 +1,47 @@
+@import 'variables.scss';
+
+@mixin header{
+    nav{
+        width: 70%;
+        display: flex;
+
+        // Format tablette
+        @media (max-width: 992px){
+            width: 100%;
+        }
+
+        ul{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+
+            // Format Tablette
+            @media (max-width: 992px){
+                width: 90%;
+                align-items: center;
+            }
+            
+            a{
+                text-decoration: none;
+                color: $textHeader;
+            }
+
+            button{
+                width: 25%;
+                height: 3vh;
+                background-color: $greenButton;
+                color: $textGreenButton;
+                border: none;
+
+                
+            // Format Tablette
+            @media (max-width: 992px){
+                width: 30%;
+                height: 5vh;
+            }
+            }
+        }
+    }
+}

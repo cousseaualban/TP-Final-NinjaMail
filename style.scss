@@ -1,0 +1,597 @@
+@import './sass/header';
+@import './sass/footer';
+@import './sass/variables';
+
+body {
+    header {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include header;
+    }
+
+    // Section 1
+    #section1 {
+        width: 20%;
+        height: 70vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        // Format Tablette
+        @media (max-width: 992px) {
+            width: 50%;
+        }
+
+        // Format mobile
+        @media (max-width: 768px){
+            width: 90%;
+        }
+
+        .hero {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 70%;
+            top: 40%;
+
+            // Format Tablette
+            @media (max-width: 992px) {
+                right: 40%;
+                top: 30%;
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 60%;
+                top: 15%;
+                right: 40%;
+            }
+
+            h1 {
+                font-size: 3em;
+                font-family: Playfair Display;
+
+                // Format Tablette
+                @media (max-width: 992px) {
+                    font-size: 2.5em;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    font-size: 3.5em;
+                }
+            }
+
+            button {
+                width: 40%;
+                height: 6vh;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    // Section 2
+    #section2 {
+        width: 50%;
+        height: 55vh;
+        margin: auto;
+        background-image: url('./assets/video.png');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        // Format Tablette
+        @media (max-width: 992px) {
+            width: 70%;
+        }
+
+        // Format mobile
+        @media (max-width: 768px){
+            width: 90%;
+        }
+
+        .video {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 40%;
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 80%;
+            }
+
+
+            h1 {
+                color: white;
+                font-family: Playfair Display;
+                font-size: 3em;
+
+                // Format Tablette
+                @media (max-width: 992px) {
+                    font-size: 2.5em;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    font-size: 3em;
+                }
+            }
+
+            button {
+                width: 30%;
+                height: 5vh;
+            }
+        }
+
+    }
+
+    #section3 {
+        width: 100%;
+        height: 70vh;
+        margin: auto;
+        position: relative;
+        display: flex;
+
+            // Format tablette
+            @media (max-width: 992px){
+                height: 80vh;
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 80%;
+                height: 130vh;
+            }
+
+
+        .campaign {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            // Format Tablette
+            @media (max-width: 992px) {
+                width: 90%;
+                height: 30vh;
+                margin: auto;
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 100%;
+                height: 110vh;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .girlBox {
+                background: #fff;
+                box-sizing: border-box;
+                border-radius: 10px;
+                box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+                width: 15%;
+                height: 15vh;
+                margin: auto;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                top: 60%;
+                left: 16%;
+
+                // Format Tablette
+                @media (max-width: 992px) {
+                    width: 23%;
+                    height: 23vh;
+                    top: 65%;
+                    left: 7%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 40%;
+                    height: 20vh;
+                    top: 25%;
+                    left: 30%;
+                }
+
+                button {
+                    color: $textWhiteButton;
+                    border: none;
+                    background: #fff;
+                }
+            }
+
+            .groupBox {
+                background: #fff;
+                box-sizing: border-box;
+                border-radius: 10px;
+                box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+                width: 15%;
+                height: 15vh;
+                margin: auto;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                top: 60%;
+                left: 39%;
+
+                // Format Tablette
+                @media (max-width: 992px) {
+                    width: 24%;
+                    height: 23vh;
+                    top: 65%;
+                    left: 36%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 40%;
+                    height: 20vh;
+                    top: 60%;
+                    left: 30%;
+                }
+
+                button {
+                    color: $textWhiteButton;
+                    border: none;
+                    background: #fff;
+                }
+            }
+
+            div {
+                width: 35%;
+                display: flex;
+                flex-direction: column;
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 100%;
+                }
+
+                h1 {
+                    font-family: Playfair Display;
+                    font-size: 3em;
+                    
+                    //Format tablette
+                    @media (max-width: 992px) {
+                        font-size: 2.5em;
+                    }
+
+                    // Format mobile
+                    @media (max-width: 768px){
+                        text-align: center;
+                    }
+
+                }
+
+                p{                    
+                    // Format mobile
+                    @media (max-width: 768px){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #section4 {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        // Format tablette
+        @media (max-width: 992px) {
+            width: 90%;
+            margin: auto;
+            height: 40vh;
+        }
+
+        // Format mobile
+        @media (max-width: 768px){
+            width: 50%;
+            height: 95vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+
+        
+        img{
+            // Format tablette
+            @media (max-width: 992px){
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .frankie {
+
+            h2 {
+                color: white;
+                position: absolute;
+                bottom: 25%;
+                left: 2%;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    bottom: 50%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    bottom: 75%;
+                    left: 10%;
+                }
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 10%;
+                left: 2%;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    bottom: 40%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    bottom: 70%;
+                    left: 10%;
+                }
+            }
+        }
+
+        .camile {
+            h2 {
+                color: white;
+                position: absolute;
+                bottom: 25%;
+                left: 40%;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    bottom: 50%;
+                    left: 35%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    bottom: 40%;
+                    left: 10%;
+                }
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 10%;
+                left: 40%;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    bottom: 40%;
+                    left: 35%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    bottom: 35%;
+                    left: 10%;
+                }
+            }
+        }
+
+        .elayne {
+            h2 {
+                color: white;
+                position: absolute;
+                bottom: 25%;
+                left: 77%;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    bottom: 50%;
+                    left: 70%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    bottom: 5%;
+                    left: 10%;
+                }
+            }
+
+            p {
+                color: white;
+                position: absolute;
+                bottom: 10%;
+                left: 77%;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    bottom: 40%;
+                    left: 70%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    top: 93%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+
+    #section5 {
+        width: 70%;
+        height: 30vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+            // Format tablette
+            @media (max-width: 992px){
+                width: 80%;
+                margin: auto;
+
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 60%;
+                margin: auto;
+            }
+
+        .email {
+            width: 70%;
+            margin: auto;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    width: 90%;
+
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+             h1{
+                 width: 80%;
+                 text-align: center;
+
+                 // Format tablette
+                @media (max-width: 992px){
+                    width: 90%;
+
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 100%;
+                }
+              }
+
+            p {
+                color: $textWhiteButton;
+            }
+
+            .emailButton {
+                width: 40%;
+                border-color: #9F9F9F;
+                background-color: #fff;
+                height: 4vh;
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 60%;
+                }
+
+            }
+
+            button{
+                // Format mobile
+                @media (max-width: 768px){
+                    height: 5vh;
+                }
+            }
+        }
+    }
+
+    #section6 {
+        width: 100%;
+        height: 50vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .logos {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+
+                // Format tablette
+                @media (max-width: 992px){
+                    width: 80%
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 90%;
+                }
+        }
+
+        .getStarted {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $greenButton;
+
+            h1 {
+                color: white;
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 40vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        @include footer;
+
+    }
+
+    //Classes pour les boutons
+    .greenButton {
+        background-color: $greenButton;
+        color: $textGreenButton;
+        border: none;
+        height: 4vh;
+    }
+
+    .whiteButton {
+        background-color: $whiteButton;
+        color: $textWhiteButton;
+        border-color: $borderWhiteButton;
+    }
+}
