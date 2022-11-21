@@ -70,9 +70,16 @@ body {
 
             button {
                 width: 40%;
-                height: 6vh;
-                display: flex;
-                flex-direction: column;
+                height: 4vh;
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 30%;
+                    height: 5vh;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
             }
         }
     }
@@ -567,6 +574,11 @@ body {
 
             h1 {
                 color: white;
+
+                // Format mobile
+                @media (max-width: 768px){
+                    font-size: 4em;
+                }
             }
         }
     }

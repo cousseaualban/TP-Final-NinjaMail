@@ -1,0 +1,5 @@
+Points à revoir après ce TP 
+
+=> Barre de navigation avec le menu Burger
+
+=> Les espaces entre les sections sans utiliser la propriété height

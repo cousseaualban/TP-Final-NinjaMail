@@ -100,9 +100,16 @@ body #section1 .hero h1 {
 }
 body #section1 .hero button {
   width: 40%;
-  height: 6vh;
-  display: flex;
-  flex-direction: column;
+  height: 4vh;
+}
+@media (max-width: 768px) {
+  body #section1 .hero button {
+    width: 30%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 body #section2 {
   width: 50%;
@@ -542,6 +549,11 @@ body #section6 .getStarted {
 }
 body #section6 .getStarted h1 {
   color: white;
+}
+@media (max-width: 768px) {
+  body #section6 .getStarted h1 {
+    font-size: 4em;
+  }
 }
 body footer {
   width: 100%;
